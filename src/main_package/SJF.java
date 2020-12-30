@@ -21,7 +21,7 @@ public class SJF {
 
     }
 
-    public void is_work()
+    public void Run()
     {
         while(finished_processes < processes_length )
         {

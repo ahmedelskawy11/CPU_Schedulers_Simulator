@@ -26,7 +26,7 @@ public class Main {
         Collections.sort(processes);
 
         SJF myapp = new SJF(processes);
-        myapp.is_work();
+        myapp.Run();
 
     }
 
