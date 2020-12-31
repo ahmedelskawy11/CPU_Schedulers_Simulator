@@ -55,10 +55,10 @@ public class SRTF {
 
     public void Run()
     {
-        boolean process_switched = false ;
+        boolean cpu_working = false ;// if cpu is executing any process now
         int minimum_burst_time_remaining = 9999 ;
         int current_process_index  = 0 ;
-        int last_executed_index = 0  ;
+        int previous_executed_index = 0  ;
         int current_process_burst_time = 0;
         while(finished_processes != processes_length)
         {
@@ -73,20 +73,21 @@ public class SRTF {
                     current_process_burst_time =  processes_burst_times.get(i) ;
                     minimum_burst_time_remaining = current_process_burst_time  ; // the shortest burst time -
                     current_process_index = i ; // the process we are going to execute
-                   
-                    process_switched = true ;
+
+                    cpu_working = true ;
                 }
             }
 
             //We have been changed our process
-            if(last_executed_index != current_process_index)
+            if(previous_executed_index != current_process_index)
                 current_time+= context_switch ;
 
             // we are not executing anything
-            if (!process_switched) {
+            if (!cpu_working) {
                 current_time++;
                 continue;
             }
+
 
             // decreasing this burst time by 1
             processes_burst_times.set( current_process_index , --current_process_burst_time);
@@ -95,10 +96,10 @@ public class SRTF {
             if( current_process_burst_time == 0 ){
                 finished_processes++;
                 minimum_burst_time_remaining = 9999;
-                process_switched = false;
+                cpu_working = false;
                 processes.get(current_process_index).set_finished_turnAround_waiting_time(current_time + 1);
             }
-            last_executed_index = current_process_index ;
+            previous_executed_index = current_process_index ;
             current_time++ ;
         }
     }
