@@ -25,9 +25,14 @@ public class Main {
 
         Collections.sort(processes);
 
-        SJF myapp = new SJF(processes);
-        myapp.Run();
+        //SJF SJF_Test = new SJF(processes);
+        //SJF_Test.Run();
 
+        SRTF SRTF_Test = new SRTF(processes,0);
+        SRTF_Test.calculate_average_waiting_time();
+        SRTF_Test.calculate_average_turn_around_time();
+
+        
     }
 
 }
