@@ -17,7 +17,7 @@ public class RR {
         this.time_quantum = given_time_quantum ;
         this.context_switch = given_context_switch;
         this.current_time = 0  ;
-        initializing_burst_times() ;
+        initializing_burst_times() ; //temp burst times to change it in our loop
         Run();
     }
 
@@ -51,8 +51,16 @@ public class RR {
         System.out.println("Average Turn Around Time = " +average );
     }
 
+    public void printing_the_table()
+    {
+        for (Process process : processes)
+            System.out.println(process);
+    }
+
+
     public void Run()
     {
+        System.out.print("\n| ");
         while(true)
         {
             boolean all_finished = true ;
@@ -64,11 +72,13 @@ public class RR {
                     all_finished = false ;
                     if(processes_burst_times.get(i) > time_quantum )
                     {
+                        System.out.print(processes.get(i).get_name() + " | ");
                         current_time+= time_quantum + context_switch;
                         //burst time -= time quantum but in Array list
                         processes_burst_times.set(i ,processes_burst_times.get(i) - time_quantum) ;
                     }else
                     {
+                        System.out.print(processes.get(i).get_name() + " | ");
                         current_time+=processes_burst_times.get(i) + context_switch;//add the rest to the time
                         int finished_time = current_time  - context_switch;
                         processes.get(i).set_finished_turnAround_waiting_time(finished_time);
@@ -79,5 +89,11 @@ public class RR {
 
             if(all_finished){ break; } //all burst times are equal zero
         }
+        System.out.print("\n");
+
+        System.out.println("\nProcesses  Burst time  Waiting time  Turn around time");
+        printing_the_table();
+
+        System.out.println("\n");
     }
 }

@@ -17,9 +17,14 @@ public class SRTF {
         this.context_switch = given_context_switch ;
         processes = given_processes ;
         processes_length = given_processes.size();
-        initializing_burst_times(this.processes_burst_times , this.processes) ;
+        initializing_burst_times() ; //temp burst times to change it in our loop
         Run();
 
+    }
+    public  void initializing_burst_times()
+    {
+        for(Process process: this.processes)
+            processes_burst_times.add(process.get_Burst_time());
     }
 
     public void calculate_average_waiting_time()
@@ -45,12 +50,11 @@ public class SRTF {
 
         System.out.println("Average Turn Around Time = " +average );
     }
-    public  void initializing_burst_times( ArrayList<Integer> burst_times , ArrayList<Process> processes)
+
+    public void printing_the_table()
     {
-        for(int i = 0 ; i < processes_length ;i++)
-        {
-            burst_times.add( processes.get(i).get_Burst_time()  ) ;
-        }
+        for (Process process : processes)
+            System.out.println(process);
     }
 
     public void Run()
@@ -60,6 +64,9 @@ public class SRTF {
         int current_process_index  = 0 ;
         int previous_executed_index = 0  ;
         int current_process_burst_time = 0;
+
+        System.out.print("\n| ");
+
         while(finished_processes != processes_length)
         {
             //looping throw the processes to see if any process is available and has less burst time than current process.
@@ -80,8 +87,10 @@ public class SRTF {
 
             //We have been changed our process
             if(previous_executed_index != current_process_index)
+            {
                 current_time+= context_switch ;
-
+                System.out.print(processes.get(previous_executed_index).get_name() + " | ");
+            }
             // we are not executing anything
             if (!cpu_working) {
                 current_time++;
@@ -102,6 +111,14 @@ public class SRTF {
             previous_executed_index = current_process_index ;
             current_time++ ;
         }
+        System.out.print(processes.get(current_process_index).get_name() + " | ");
+        System.out.print("\n");
+
+        System.out.println("\nProcesses  Burst time  Waiting time  Turn around time");
+        printing_the_table();
+
+        System.out.println("\n");
+
     }
 
 

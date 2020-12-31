@@ -25,6 +25,8 @@ public class Process implements Comparable<Process>{
 
     }
 
+    String get_name() { return this.name ; }
+
     int get_waiting_time()
     {
         return this.waiting_time ;
@@ -48,7 +50,10 @@ public class Process implements Comparable<Process>{
 
     @Override
     public String toString(){
-        return "[ Name = " + name + ", Arrival = " + arrival_time + ", Burst = " + burst_time + "]";
+        return " " + this.name
+                + "\t\t\t\t" + this.burst_time
+                + "\t\t\t" + this.waiting_time +
+                "\t\t\t\t" + this.turn_around_time;
     }
 
 
