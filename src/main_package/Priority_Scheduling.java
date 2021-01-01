@@ -18,7 +18,7 @@ public class Priority_Scheduling {
         processes_length = given_processes.size();
 
         initializing_burst_times() ; //temp burst times to change it in our loop
-        initializing_priorities() ; //temp burst times to change it in our loop
+        initializing_priorities() ; //temp Priorities to change it in our loop
         Run();
 
     }
@@ -36,7 +36,6 @@ public class Priority_Scheduling {
 
     public void calculate_average_waiting_time()
     {
-
         double total = 0 ;
         double average ;
         for(Process cur_process : processes)
@@ -96,7 +95,7 @@ public class Priority_Scheduling {
             //We have been changed our process
             if(previous_executed_index != current_process_index && !first_iteration)
             {
-                //increment by one to avoid starvation problem
+                //decreasing by one if you changed any process to solve the starvation problem
                 processes_priorities.set( previous_executed_index ,processes_priorities.get(previous_executed_index) -1 ) ;
                 System.out.print(processes.get(previous_executed_index).get_name() + " | ");
             }

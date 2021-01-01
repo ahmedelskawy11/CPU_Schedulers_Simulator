@@ -1,5 +1,7 @@
 package main_package;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Utilities {
@@ -34,5 +36,30 @@ public class Utilities {
         System.out.print(msg);
         int temp = input.nextInt();
         return  temp ;
+    }
+
+    public void Initiating_Processes(ArrayList<Process> processes , int scheduling_algorithm   )
+    {
+        int processes_number = this.take_positive_number("Number Of Processes : ");
+        int burst_time = 0 , arrival_time = 0 , priority = 0 ;
+        for(int i = 0 ; i < processes_number ; i++)
+        {
+            System.out.println("Process "+(i+1));
+
+            String process_name = this.take_string("Name Of The Process : ");
+            burst_time = this.take_positive_number("Burst Time For This Process : ");
+
+            if(scheduling_algorithm != 2)
+                arrival_time = this.take_positive_number("Arrival Time For This Process : ");
+
+            if(scheduling_algorithm == 3)
+                priority = this.take_positive_number("Priority For This Process : ");
+
+            Process temp_process = new Process(process_name ,burst_time , arrival_time , priority);
+            processes.add(temp_process) ;
+        }
+
+        Collections.sort(processes);    //sorting based on arrival time
+
     }
 }

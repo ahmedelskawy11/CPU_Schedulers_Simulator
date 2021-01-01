@@ -4,8 +4,8 @@ public class Process implements Comparable<Process>{
       String name ;
       int burst_time ;
       int arrival_time ;
-      int finished_time ;
       int priority;
+      int finished_time ;
       int waiting_time ;
       int turn_around_time ;
 

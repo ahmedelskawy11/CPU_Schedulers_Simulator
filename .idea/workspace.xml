@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="febab793-e059-4f86-8de6-ef59ebe3c2e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main_package/Priority_Scheduling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/SRTF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/SRTF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/Priority_Scheduling.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/Priority_Scheduling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/Process.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main_package/Priority_Scheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Priority_Scheduling.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main_package/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main_package/SRTF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/SRTF.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main_package/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Utilities.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,25 +92,25 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="432" y="139" key="FileChooserDialogImpl/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609405762469" />
-    <state width="981" height="227" key="GridCell.Tab.0.bottom" timestamp="1609464611548">
-      <screen x="1366" y="0" width="1024" height="738" />
+    <state width="1261" height="259" key="GridCell.Tab.0.bottom" timestamp="1609467405467">
+      <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="239" key="GridCell.Tab.0.bottom/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609386109985" />
+    <state width="1261" height="259" key="GridCell.Tab.0.bottom/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609467405467" />
     <state width="981" height="227" key="GridCell.Tab.0.bottom/0.0.1304.768/1366.0.1024.738@1366.0.1024.738" timestamp="1609464611548" />
-    <state width="981" height="227" key="GridCell.Tab.0.center" timestamp="1609464611548">
-      <screen x="1366" y="0" width="1024" height="738" />
+    <state width="1261" height="259" key="GridCell.Tab.0.center" timestamp="1609467405467">
+      <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="239" key="GridCell.Tab.0.center/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609386109984" />
+    <state width="1261" height="259" key="GridCell.Tab.0.center/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609467405467" />
     <state width="981" height="227" key="GridCell.Tab.0.center/0.0.1304.768/1366.0.1024.738@1366.0.1024.738" timestamp="1609464611548" />
-    <state width="981" height="227" key="GridCell.Tab.0.left" timestamp="1609464611547">
-      <screen x="1366" y="0" width="1024" height="738" />
+    <state width="1261" height="259" key="GridCell.Tab.0.left" timestamp="1609467405467">
+      <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="239" key="GridCell.Tab.0.left/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609386109984" />
+    <state width="1261" height="259" key="GridCell.Tab.0.left/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609467405467" />
     <state width="981" height="227" key="GridCell.Tab.0.left/0.0.1304.768/1366.0.1024.738@1366.0.1024.738" timestamp="1609464611547" />
-    <state width="981" height="227" key="GridCell.Tab.0.right" timestamp="1609464611548">
-      <screen x="1366" y="0" width="1024" height="738" />
+    <state width="1261" height="259" key="GridCell.Tab.0.right" timestamp="1609467405467">
+      <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state width="1261" height="239" key="GridCell.Tab.0.right/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609386109984" />
+    <state width="1261" height="259" key="GridCell.Tab.0.right/0.0.1304.768/1366.0.1024.738@0.0.1304.768" timestamp="1609467405467" />
     <state width="981" height="227" key="GridCell.Tab.0.right/0.0.1304.768/1366.0.1024.738@1366.0.1024.738" timestamp="1609464611548" />
     <state width="981" height="227" key="GridCell.Tab.1.bottom" timestamp="1609464611548">
       <screen x="1366" y="0" width="1024" height="738" />
@@ -142,15 +143,6 @@
     <state x="1613" y="86" width="672" height="652" key="search.everywhere.popup/0.0.1304.768/1366.0.1024.738@1366.0.1024.738" timestamp="1609438461193" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main_package/Main.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((RR)this).processes" language="JAVA" custom="main_package.RR" />
