@@ -5,14 +5,16 @@ public class Process implements Comparable<Process>{
       int burst_time ;
       int arrival_time ;
       int finished_time ;
+      int priority;
       int waiting_time ;
       int turn_around_time ;
 
-    public Process(String given_name , int given_burst_time , int given_arrival_time)
+    public Process(String given_name , int given_burst_time , int given_arrival_time, int given_priority)
     {
         this.name = given_name ;
         this.burst_time = given_burst_time;
         this.arrival_time = given_arrival_time ;
+        this.priority = given_priority ;
     }
 
     void set_finished_turnAround_waiting_time(int given_finished_time)
@@ -26,6 +28,11 @@ public class Process implements Comparable<Process>{
     }
 
     String get_name() { return this.name ; }
+
+    int get_priority()
+    {
+        return this.priority ;
+    }
 
     int get_waiting_time()
     {

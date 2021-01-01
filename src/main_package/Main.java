@@ -18,8 +18,9 @@ public class Main {
             String process_name = Utils.take_string("Name Of The Process : ");
             int burst_time = Utils.take_positive_number("Burst Time For This Process : ");
             int arrival_time = Utils.take_positive_number("Arrival Time For This Process : ");
+            int priority = Utils.take_positive_number("Priority For This Process : ");
 
-            Process temp_process = new Process(process_name,burst_time,arrival_time);
+            Process temp_process = new Process(process_name,burst_time,arrival_time , priority);
             processes.add(temp_process) ;
         }
 
@@ -33,9 +34,14 @@ public class Main {
         //SRTF_Test.calculate_average_waiting_time();
         //SRTF_Test.calculate_average_turn_around_time();
 
-        RR RR_Test = new RR(processes , 4 , 0 );
-        RR_Test.calculate_average_waiting_time();
-        RR_Test.calculate_average_turn_around_time();
+        //RR RR_Test = new RR(processes , 4 , 0 );
+        //RR_Test.calculate_average_waiting_time();
+        //RR_Test.calculate_average_turn_around_time();
+
+        Priority_Scheduling PS_Test = new Priority_Scheduling(processes);
+        PS_Test.calculate_average_waiting_time();
+        PS_Test.calculate_average_turn_around_time();
+
         
     }
 
