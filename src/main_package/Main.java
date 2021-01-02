@@ -52,6 +52,13 @@ public class Main {
 
             case 4: {
                 // Multi level Scheduling
+                Utils.Initiating_Processes(processes,4);
+                int time_quantum = Utils.take_positive_number("Round robin Time Quantum: ");
+
+                MLQ multi_level_scheduling = new MLQ(processes, time_quantum);
+                multi_level_scheduling.calculate_average_waiting_time();
+                multi_level_scheduling.calculate_average_turn_around_time();
+
                 break;
             }
 

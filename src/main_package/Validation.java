@@ -5,4 +5,8 @@ public class Validation {
     {
         return input < 0 ;
     }
+    boolean isNotOneOrTwo(int input)
+    {
+        return !(input == 1 || input == 2) ;
+    }
 }
