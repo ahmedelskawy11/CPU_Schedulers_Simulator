@@ -96,6 +96,10 @@ public class MLQ {
 
         while(finished_processes != total_processes_length)
         {
+
+            /*
+            THis Loop For Executing First Queue Till Its Empty For Current Moment
+             */
             while(true)
             {
                 is_first_queue_working = false ;
@@ -109,7 +113,7 @@ public class MLQ {
                     {
                         System.out.print(first_queue.get(i).get_name() + " | ");
                         current_time+= time_quantum  ;
-                        //burst time -= time quantum but in Array list
+                        //burst time -= time quantum but in This Array list
                         first_queue_burst_times.set(i ,first_queue_burst_times.get(i) - time_quantum) ;
                         is_first_queue_working = true ;
 
@@ -127,11 +131,16 @@ public class MLQ {
 
                 }
 
+                //IF There Is Not Available Process To Execute In This Queue Will Break This While and Check Second Queue
                 if(!is_first_queue_working)
                     break;
 
             }
 
+            /*
+               Start Searching in Second Queue To Execute Available Arrived Processes In FCFS
+               Till Any Process Comes To First Queue
+             */
             for(int i = 0 ; i < second_queue.size() ; i++)
             {
                 if(second_queue.get(i).get_arrival_time() <= current_time
@@ -149,6 +158,7 @@ public class MLQ {
             {
                 System.out.print(second_queue.get(current_FCFS_process_index).get_name() + " | ");
             }
+            // If Cpu Working Is False Then There Is Not Available Process In First or Second Queue
             if(!is_cpu_working)
             {
                 current_time++;

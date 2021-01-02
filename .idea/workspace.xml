@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="febab793-e059-4f86-8de6-ef59ebe3c2e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Ada.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main_package/MLQ.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/Process.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/Process.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ass 3/main_package/Validation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ass 3/main_package/Validation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main_package/Process.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Process.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main_package/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main_package/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/Validation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main_package/MLQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main_package/MLQ.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
