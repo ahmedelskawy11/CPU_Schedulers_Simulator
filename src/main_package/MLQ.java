@@ -111,23 +111,25 @@ public class MLQ {
 
                     if(first_queue_burst_times.get(i)  > time_quantum )
                     {
-                        System.out.print(first_queue.get(i).get_name() + " | ");
                         current_time+= time_quantum  ;
                         //burst time -= time quantum but in This Array list
                         first_queue_burst_times.set(i ,first_queue_burst_times.get(i) - time_quantum) ;
-                        is_first_queue_working = true ;
 
                     }else
                     {
-                        System.out.print(first_queue.get(i).get_name() + " | ");
                         current_time+=first_queue_burst_times.get(i) ;//add the rest to the time
+
                         int finished_time = current_time  ;
                         first_queue.get(i).set_finished_turnAround_waiting_time(finished_time);
                         first_queue_burst_times.set(i,0); //set this burst time to 0
+
                         finished_processes++ ;
+
                         previous_FCFS_process_index = -1 ; // usefull for printing only
-                        is_first_queue_working = true ;
                     }
+                    // We Worked In A Process Then We Will Print It And Change our Flag to True 
+                    System.out.print(first_queue.get(i).get_name() + " | ");
+                    is_first_queue_working = true ;
 
                 }
 
