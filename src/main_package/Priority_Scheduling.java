@@ -76,7 +76,7 @@ public class Priority_Scheduling {
 
         while(finished_processes != processes_length)
         {
-            //looping throw the processes to see if any process is available and has less burst time than current process.
+            //looping through the processes to see if any process is available and has less burst time than current process.
             // or there is not available processes to execute
             for(int i = 0 ; i < processes_length ; i++)
             {
